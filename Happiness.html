@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#musicImage {
+ width: 120px;
+ length: 120px;
+ border: solid white;
+ border-radius: 60px;
+ transition: border-color 2s, transform 2s, opacity 2s;
+}
+#musicImage:hover {
+	transform: scale(0.9);
+	border-color: black;
+	opacity: 70%;
+}
+body {
+  background-image: url("https://i.ibb.co/q3vqfR2j/Picsart-25-02-14-18-29-43-374.jpg");
+   background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%
+}
+h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px red, 0 0 20px pink, 0 0 10px deeppink, 0 0 40px deeppink;
+  }
+  to {
+    text-shadow: 0 0 20px deeppink, 0 0 30px darkred, 0 0 40px red, 0 0 50px red;
+}
+</style>
+</head>
+<body bgcolor="black" text="white">
+	
+<center>
+	<div class="container">
+		<img id="musicImage" src="https://i.ibb.co/BfqvJrC/Picsart-24-10-13-18-18-26-911.jpg">
+		<audio id="music" src="https://github.com/Tejas-V17/Musix/raw/MJ/titli.mp3" loop></audio>
+	</div>
+	
+<h2> I LOVE YOU ❤️</h2>
+<p style="font-family: cursive; margin-bottom: 0px">
+	You're my Happiness, You're my Khushi :)</p>
+	
+<hr style="border:1px solid gray; opacity: 50%;">
+</center>
+
+<script src="https://static.app/js/static.js" type="text/javascript"></script>
+</body>
+<script> 
+// Get references to the image and audio elements
+const musicImage = document.getElementById('musicImage');
+const music = document.getElementById('music');
+
+// Add a click event listener to the image for playing/pausing music
+musicImage.addEventListener('click', () => {
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+});
+</script>
+</html>
